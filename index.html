@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home_page">
+    
+    <div id="dark-mode-container">
+        <div id="dark-mode-toggle">
+        <span class="icon sun">☀️</span>
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <span class="icon moon">🌙</span>
+    </div></div>
+    
+    <div class="welcome-main-container">
+    <div class="welcome_container">
+        <h1> <span>Welcome to the</span> <br> Frontend Quiz!</h1>
+        <p>Pick a subject to get started.</P>
+        
+    </div>
+    <div class="topic_container">
+        <a  onclick="initialized(this)" href="question.html"><div class="topic"><div class="icon-background" style="background-color: bisque;"><img src="./assets/images/icon-html.svg" alt=""></div>  HTML</div></a>
+        <a onclick="initialized(this)" href="question.html"><div class="topic"><div class="icon-background" style="background-color:aquamarine;"><img src="./assets/images/icon-css.svg" alt=""></div>  CSS</div></a> 
+        <a onclick="initialized(this)" href="question.html"><div class="topic"><div class="icon-background" style="background-color: aliceblue;"><img src="./assets/images/icon-js.svg" alt=""></div>  JavaScript</div></a> 
+        <a onclick="initialized(this)" href="question.html"><div class="topic"><div class="icon-background" style="background-color: pink;"><img src="./assets/images/icon-accessibility.svg" alt=""></div>  Accessibility</div> </a>
+        
+    </div>
+    </div>
+    <script src="one.js"></script>
+</body>
+</html>

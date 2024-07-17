@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="score-page" onload="show_score()">
+    <div style="display: flex;">
+        <div id="topic-logo"><div id="logo-background" style="background-color: bisque;width: 40px;"><img id="logo" src="./assets/images/icon-html.svg" alt=""></div><p id="topic-text">HTML</p></div>
+        <div id="dark-mode-container"><div id="dark-mode-toggle">
+            <span class="icon sun">☀️</span>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="icon moon">🌙</span>
+        </div></div>
+    </div>
+    <div id="score-main-container">
+    <div id="score-left-container">
+        <h1> <span>Quiz Completed</span> <br>You Scored...</h1>   
+    </div>
+    <div class="score-container">
+        <div class="score-sub-container">
+            <div id="topic-logo"><div id="logo-background" style="background-color: bisque;width: 40px;"><img id="logo" src="./assets/images/icon-html.svg" alt=""></div><p id="topic-text">HTML</p></div>
+            <h1 id="final-score">1</h1>
+            <p>out of 10</p>
+        </div>
+        
+        <button id="submit-answer" class="play_again-button"  onclick="play_again()">Play Again</button>
+    </div>
+</div>
+<script src="one.js"></script>
+</body>
+</html>

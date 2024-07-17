@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="question-page" onload="load_contents()">
+    <div style="display: flex;">
+    <div id="topic-logo"><div id="logo-background" style="background-color: bisque;width: 40px;"><img id="logo" src="./assets/images/icon-html.svg" alt=""></div><p id="topic-text">HTML</p></div>
+    <div id="dark-mode-container"><div id="dark-mode-toggle">
+        <span class="icon sun">☀️</span>
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <span class="icon moon">🌙</span>
+    </div></div>
+    </div>
+    <div id="question-option-container">
+    <div class="question-container">
+        <p>Question <span id="q-no"></span> of 10</p>
+        <h1 id="question">which of tehse color conarinet ais not presnet in html as weela s css</h1>
+        <div id="progess_bar-container">
+            <div id="progress_bar"></div>
+        </div>
+    </div>
+    <div class="options-container">
+        <div onclick="selected(this)" class="option"><div class="option-background">A</div> <p id="optionA">HTML</p> </div>
+        <div onclick="selected(this)" class="option"><div class="option-background">B</div> <p id="optionB">CSS</p></div> 
+        <div onclick="selected(this)" class="option"><div class="option-background">C</div> <p id="optionC">JavaScript</p></div> 
+        <div onclick="selected(this)" class="option"><div class="option-background">D</div> <p id="optionD">Acessibility</p></div> 
+        <button id="submit-answer" onclick="submit_answer()">Submit answer</button>
+        <p id="option-error">X Please Select an Option</p>
+    </div>
+</div>
+    <script src="one.js"></script>
+</body>
+</html>
